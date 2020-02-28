@@ -9,7 +9,6 @@ export default class Favorites extends Component {
     render() {
         return (
             <div>
-            
                 <List characters={ this.state.characters } />
             </div>
         )

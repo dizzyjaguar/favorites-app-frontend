@@ -11,6 +11,7 @@ export default class Search extends Component {
     handleSearch = async () => {
         const data = await request.get(`https://favorites-app-backend.herokuapp.com/api/starwars/?search=${this.state.input}`)
 
+        console.log(data.body.results)
         this.setState({
             characters: data.body.results,
         });
