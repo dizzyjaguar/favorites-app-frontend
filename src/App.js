@@ -1,22 +1,25 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Switch,
 } from 'react-router-dom';
+import Search from './Search.js';
+import Favorites from './Favorites.js';
+
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter>
+      <div className="App">
         <Switch>
           <Route exact path='/' component={Search} />
           <Route path='/' component={Favorites} />
         </Switch>
-      </Router>      
-    </div>
+        </div>
+      </BrowserRouter>      
   );
 }
 
