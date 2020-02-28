@@ -20,7 +20,7 @@ export default class Search extends Component {
 
     render() {
         return (
-            <div>
+            <div className='search-div'>
                 <input value={this.state.input} onChange={(e) => this.setState({input: e.target.value})} />
                 <button onClick={this.handleSearch}>Search</button>
                 <List characters={this.state.characters} />     
